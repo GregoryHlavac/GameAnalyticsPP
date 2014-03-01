@@ -1,0 +1,18 @@
+package ProtocolBuffers.GameAnalytics;
+
+message Event
+{
+	required string user_id = 1;
+	required string session_id = 2;
+	required string build = 3;
+
+	optional string event_id = 4;
+	
+	optional string area = 5;
+	optional float x = 6;
+	optional float y = 7;
+	optional float z = 8;
+
+
+	extensions 50 to max;
+}

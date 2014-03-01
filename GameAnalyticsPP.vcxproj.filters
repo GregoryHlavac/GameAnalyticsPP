@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Protocol Buffers">
+      <UniqueIdentifier>{58013de6-564c-409c-84e6-2a370427a66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{6d8fb41c-0845-4895-970d-0e2a1dcc368c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event\Header Files">
+      <UniqueIdentifier>{0bb0e849-f16e-453a-a25e-4dd794c1342d}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Event\Source Files">
+      <UniqueIdentifier>{4ad7ebd1-b8ca-4d6c-87aa-69a4e5aec3bc}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessEvent.pb.h">
+      <Filter>Protocol Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="DesignEvent.pb.h">
+      <Filter>Protocol Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorEvent.pb.h">
+      <Filter>Protocol Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.pb.h">
+      <Filter>Protocol Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="UserEvent.pb.h">
+      <Filter>Protocol Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalyticManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Event\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DesignEvent.h">
+      <Filter>Event\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserEvent.h">
+      <Filter>Event\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorEvent.h">
+      <Filter>Event\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessEvent.h">
+      <Filter>Event\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmissionHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessEvent.pb.cc">
+      <Filter>Protocol Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="DesignEvent.pb.cc">
+      <Filter>Protocol Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorEvent.pb.cc">
+      <Filter>Protocol Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.pb.cc">
+      <Filter>Protocol Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="UserEvent.pb.cc">
+      <Filter>Protocol Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalyticManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Event\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DesignEvent.cpp">
+      <Filter>Event\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorEvent.cpp">
+      <Filter>Event\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserEvent.cpp">
+      <Filter>Event\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessEvent.cpp">
+      <Filter>Event\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

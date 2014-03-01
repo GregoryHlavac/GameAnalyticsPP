@@ -1,0 +1,27 @@
+import "Event.proto";
+package ProtocolBuffers.GameAnalytics;
+
+message UserEvent
+{
+	extend Event
+	{
+		optional string gender 				= 51;
+		optional int32 birth_year 			= 52;
+		optional int32 friend_count 		= 53;
+		optional string facebook_id 		= 54;
+		optional string googleplus_id 		= 55;
+		optional string ios_id 				= 56;
+		optional string android_id 			= 57;
+		optional string adtruth_id 			= 58;
+		optional string platform 			= 59;
+		optional string device 				= 60;
+		optional string os_major 			= 61;
+		optional string os_minor 			= 62;
+		optional string install_publisher 	= 63;
+		optional string install_site 		= 64;
+		optional string install_campaign 	= 65;
+		optional string install_adgroup 	= 66;
+		optional string install_ad 			= 67;
+		optional string install_keyword 	= 68;
+	}
+}

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A42D02B-D2B1-4D52-8367-668135402606}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameAnalyticsPP</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\ProtoJSON;..\..\..\dependent\cppnetlib\include;..\..\..\dependent\boost_1_55_0\include;..\..\..\dependent\jansson-2.5\include;..\..\..\dependent\protobuf-2.5.0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\ProtoJSON;..\..\..\dependent\cppnetlib\include;..\..\..\dependent\boost_1_55_0\include;..\..\..\dependent\jansson-2.5\include;..\..\..\dependent\protobuf-2.5.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Release;..\..\..\dependent\boost_1_55_0\lib;..\..\..\dependent\cppnetlib\lib\Release;..\..\..\dependent\jansson-2.5\lib\Release;..\..\..\dependent\protobuf-2.5.0\lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>libprotobuf.lib;jansson.lib;cppnetlib-uri.lib;cppnetlib-client-connections.lib;ProtoJSON.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalyticManager.h" />
+    <ClInclude Include="BusinessEvent.h" />
+    <ClInclude Include="BusinessEvent.pb.h" />
+    <ClInclude Include="DesignEvent.h" />
+    <ClInclude Include="DesignEvent.pb.h" />
+    <ClInclude Include="ErrorEvent.h" />
+    <ClInclude Include="ErrorEvent.pb.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="Event.pb.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="sha1.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubmissionHandler.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserEvent.h" />
+    <ClInclude Include="UserEvent.pb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnalyticManager.cpp" />
+    <ClCompile Include="BusinessEvent.cpp" />
+    <ClCompile Include="BusinessEvent.pb.cc" />
+    <ClCompile Include="DesignEvent.cpp" />
+    <ClCompile Include="DesignEvent.pb.cc" />
+    <ClCompile Include="ErrorEvent.cpp" />
+    <ClCompile Include="ErrorEvent.pb.cc" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="Event.pb.cc" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="sha1.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UserEvent.cpp" />
+    <ClCompile Include="UserEvent.pb.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

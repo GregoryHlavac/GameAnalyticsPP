@@ -1,0 +1,11 @@
+import "Event.proto";
+package ProtocolBuffers.GameAnalytics;
+
+message BusinessEvent
+{
+	extend Event
+	{
+		optional string	currency 	= 200;
+		optional int32 amount		= 201;
+	}
+}

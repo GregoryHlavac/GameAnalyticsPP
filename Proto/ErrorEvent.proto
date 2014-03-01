@@ -1,0 +1,11 @@
+import "Event.proto";
+package ProtocolBuffers.GameAnalytics;
+
+message ErrorEvent
+{
+	extend Event
+	{
+		optional string	message 	= 150;
+		optional string severity	= 151;
+	}
+}

@@ -1,0 +1,10 @@
+import "Event.proto";
+package ProtocolBuffers.GameAnalytics;
+
+message DesignEvent
+{
+	extend Event
+	{
+		optional float value 				= 100;
+	}
+}
